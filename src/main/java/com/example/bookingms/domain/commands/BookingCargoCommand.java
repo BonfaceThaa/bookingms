@@ -1,20 +1,21 @@
 package com.example.bookingms.domain.commands;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.Date;
 
-@NoArgsConstructor
-@AllArgsConstructor
+@NoArgsConstructor(force = true)
+@RequiredArgsConstructor
 @Getter
 @Setter
 public class BookingCargoCommand {
     String BookingId;
+    @lombok.NonNull
     int bookingAmount;
+    @lombok.NonNull
     String OriginLocation;
+    @lombok.NonNull
     String DestinationLocation;
+    @lombok.NonNull
     Date DestArrivalDate;
 }
