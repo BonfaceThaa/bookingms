@@ -8,14 +8,14 @@ import java.util.Date;
 @RequiredArgsConstructor
 @Getter
 @Setter
-public class BookingCargoCommand {
+public class BookCargoCommand {
     String BookingId;
     @lombok.NonNull
     int bookingAmount;
     @lombok.NonNull
     String OriginLocation;
     @lombok.NonNull
-    String DestinationLocation;
+    String DestLocation;
     @lombok.NonNull
-    Date DestArrivalDate;
+    Date DestArrivalDeadline;
 }
